@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mikroscope"
+version = "0.1.0"
+description = "This is a package to interface python-microscope with arkitekt"
+authors = ["Julio Mateos Langerak <julio.mateos-langerak@igh.cnrs.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<=3.12"
+arkitekt = "^0.5.59"
+scipy = "^1.11.3"
+microscope = {git = "https://github.com/python-microscope/microscope.git"}
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
